@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  transition: 0.8s ease-out;
+}
+.card-form {
+  border-radius: 10px;
+  box-shadow: 0 16px 40px #7090b040;
+  padding: 20px;
+  flex: 10% 0 300px;
+  transition: 0.5s ease-out;
+}
+.card-form .box-input {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-form .box-input label {
+  font-size: 1.2rem;
+  color: #333333;
+}
+.card-form .box-input .radio-option {
+  display: flex;
+  gap: 20px;
+}
+.card-form .box-input .radio-option label {
+  font-size: 1.1rem;
+  display: flex;
+  gap: 5px;
+}
+.card-form .box-input .input-item {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #7090b0;
+  font-size: 1rem;
+  color: #333333;
+}
+.card-form button:hover {
+  background: #c8cec4;
+}
+.card-form button {
+  border: 1px solid #9ba8a8;
+  background: #ebebe7;
+  padding: 6px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.data-table tr td {
+  padding: 6px 0;
+}
+
+@media (max-width: 768px) {
+  .card-form {
+    width: 100%;
+    margin: 100px 50px;
+  }
+}
